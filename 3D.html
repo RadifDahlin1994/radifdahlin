@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3D Swiper Slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="swiper.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+      	<div class="swiper-slide">
+          <div class="imgBx">
+          <img src="img1.jpg">
+        </div>
+        <div class="details">
+    	    <h3>Radif Dahlin<br><span>Web Designer</span></h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+          <img src="img2.jpg">
+        </div>
+        <div class="details">
+          <h3>Eva Lestari<br><span>Teacher</span></h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+          <img src="img3.jpg">
+        </div>
+        <div class="details">
+          <h3>Dina<br><span>Owner</span></h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+          <img src="img4.jpg">
+        </div>
+        <div class="details">
+          <h3>Tachun<br><span>Make Over</span></h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+          <img src="img5.jpg">
+        </div>
+        <div class="details">
+          <h3>Dede Randy<br><span>Photography</span></h3>
+        </div>
+    </div>
+</div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<script type="text/javascript" src="swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+    },
+    });
+</script>
+</body>
+</html>
